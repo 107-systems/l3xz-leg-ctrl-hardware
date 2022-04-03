@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "l3xz-hw_leg-controller"
+Date "2022-04-03"
+Rev "0.1"
+Comp "107-systems"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH1
+U 1 1 5E401602
+P 1000 7600
+F 0 "MECH1" H 1128 7646 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 1128 7555 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 900 7650 50  0001 C CNN
+F 3 "" H 1000 7600 50  0001 C CNN
+	1    1000 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH2
+U 1 1 5E401D77
+P 2000 7600
+F 0 "MECH2" H 2128 7646 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 2128 7555 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 1900 7650 50  0001 C CNN
+F 3 "" H 2000 7600 50  0001 C CNN
+	1    2000 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH3
+U 1 1 5E402150
+P 3000 7600
+F 0 "MECH3" H 3128 7646 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 3128 7555 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 2900 7650 50  0001 C CNN
+F 3 "" H 3000 7600 50  0001 C CNN
+	1    3000 7600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2700 7600
+NoConn ~ 1700 7600
+NoConn ~ 700  7600
+Text Notes 700  7400 0    50   ~ 0
+mounting holes
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH4
+U 1 1 5E86FE97
+P 4000 7600
+F 0 "MECH4" H 4128 7646 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 4128 7555 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 3900 7650 50  0001 C CNN
+F 3 "" H 4000 7600 50  0001 C CNN
+	1    4000 7600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 7600
+$Comp
+L power-supply:GND #PWR01
+U 1 1 5E8712B2
+P 3500 3950
+F 0 "#PWR01" H 3500 3700 50  0001 C CNN
+F 1 "GND" H 3505 3777 50  0000 C CNN
+F 2 "" H 3500 3950 50  0000 C CNN
+F 3 "" H 3500 3950 50  0000 C CNN
+	1    3500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR02
+U 1 1 5E871D21
+P 3500 2350
+F 0 "#PWR02" H 3500 2200 50  0001 C CNN
+F 1 "+3.3V" H 3515 2523 50  0000 C CNN
+F 2 "" H 3500 2350 50  0000 C CNN
+F 3 "" H 3500 2350 50  0000 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3150 3600 3150
+Wire Wire Line
+	1950 3250 3600 3250
+Text Label 2850 3150 2    50   ~ 0
+I2C_SDA
+Text Label 2850 3250 2    50   ~ 0
+I2C_SCL
+Text GLabel 1950 3150 0    50   BiDi ~ 0
+I2C_SDA
+Text GLabel 1950 3250 0    50   Output ~ 0
+I2C_SCL
+Text GLabel 6550 3850 2    50   Input ~ 0
+SER_RX
+Text GLabel 6550 3750 2    50   Output ~ 0
+SER_TX
+Wire Wire Line
+	6550 3750 4900 3750
+Wire Wire Line
+	4900 3850 6550 3850
+Text Label 5650 3850 0    50   ~ 0
+SER_RX
+Text Label 5650 3750 0    50   ~ 0
+SER_TX
+Wire Wire Line
+	6550 2950 4900 2950
+Wire Wire Line
+	6550 2550 4900 2550
+Text Label 5650 2950 0    50   ~ 0
+MCP2515_INT
+Text Label 5650 2550 0    50   ~ 0
+MOSI
+Text GLabel 6550 2950 2    50   Input ~ 0
+MCP2515_INT
+Text GLabel 6550 2550 2    50   Output ~ 0
+MOSI
+Text GLabel 1950 2450 0    50   Input ~ 0
+SCK
+Text GLabel 6550 2450 2    50   Output ~ 0
+MISO
+Wire Wire Line
+	6550 2450 4900 2450
+Wire Wire Line
+	3600 2450 1950 2450
+Text Label 2850 2450 2    50   ~ 0
+SCK
+Text Label 5650 2450 0    50   ~ 0
+MISO
+Wire Wire Line
+	5700 3350 4900 3350
+Text Label 5600 3350 2    50   ~ 0
+MCP2515_CS
+Text GLabel 5700 3350 2    50   Output ~ 0
+MCP2515_CS
+$Sheet
+S 9500 2500 1000 500 
+U 5ED92F9C
+F0 "MCP2515" 50
+F1 "mcp2515.sch" 50
+$EndSheet
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH5
+U 1 1 624A8D24
+P 5000 7600
+F 0 "MECH5" H 5128 7646 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 5128 7555 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 4900 7650 50  0001 C CNN
+F 3 "" H 5000 7600 50  0001 C CNN
+	1    5000 7600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 7600
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH6
+U 1 1 624AA589
+P 4000 7350
+F 0 "MECH6" H 4128 7396 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 4128 7305 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 3900 7400 50  0001 C CNN
+F 3 "" H 4000 7350 50  0001 C CNN
+	1    4000 7350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 7350
+$Comp
+L MECH_mounting-holes:MHP_3.2_5.8 MECH7
+U 1 1 624AA5F0
+P 5000 7350
+F 0 "MECH7" H 5128 7396 50  0000 L CNN
+F 1 "MHP_3.2_5.8" H 5128 7305 50  0000 L CNN
+F 2 "MECH_mounting_holes:MHP_3.2_5.8" H 4900 7400 50  0001 C CNN
+F 3 "" H 5000 7350 50  0001 C CNN
+	1    5000 7350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 7350
+$Comp
+L MODULE_compute:ARDUINO_NANO_33 CN1
+U 1 1 624ACA40
+P 4250 3100
+F 0 "CN1" H 4250 3997 60  0000 C CNN
+F 1 "ARDUINO_NANO_33" H 4250 3891 60  0000 C CNN
+F 2 "MODULE_compute:ARDUINO_NANO_33" H 4150 3450 60  0001 C CNN
+F 3 "" H 4250 2800 60  0000 C CNN
+	1    4250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2550 3500 2350
+Wire Wire Line
+	3500 2550 3600 2550
+$Comp
+L power-supply:GND #PWR0101
+U 1 1 624CAD5D
+P 5000 3950
+F 0 "#PWR0101" H 5000 3700 50  0001 C CNN
+F 1 "GND" H 5005 3777 50  0000 C CNN
+F 2 "" H 5000 3950 50  0000 C CNN
+F 3 "" H 5000 3950 50  0000 C CNN
+	1    5000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3550 5000 3550
+Wire Wire Line
+	5000 3550 5000 3950
+Wire Wire Line
+	3600 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 3950
+$EndSCHEMATC
