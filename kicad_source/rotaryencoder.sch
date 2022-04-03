@@ -1,0 +1,310 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L devices:R_0603 R?
+U 1 1 624A69C2
+P 3500 1800
+AR Path="/5ED92F9C/624A69C2" Ref="R?"  Part="1" 
+AR Path="/624A3AB1/624A69C2" Ref="R6"  Part="1" 
+F 0 "R6" H 3559 1846 50  0000 L CNN
+F 1 "10k" H 3559 1755 50  0000 L CNN
+F 2 "resistors:R_0603" H 3500 1650 50  0001 C CNN
+F 3 "" H 3500 1800 50  0000 C CNN
+	1    3500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 624A69C8
+P 3500 1650
+AR Path="/5ED92F9C/624A69C8" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624A69C8" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3500 1500 50  0001 C CNN
+F 1 "+3.3V" H 3515 1823 50  0000 C CNN
+F 2 "" H 3500 1650 50  0000 C CNN
+F 3 "" H 3500 1650 50  0000 C CNN
+	1    3500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1700 3500 1650
+Text Label 2200 2100 0    50   ~ 0
+AS5048_1_CS
+Text Label 2200 2400 0    50   ~ 0
+MOSI
+Text GLabel 2100 2400 0    50   Input ~ 0
+MOSI
+Text GLabel 2100 2200 0    50   Input ~ 0
+SCK
+Text GLabel 2100 2300 0    50   Output ~ 0
+MISO
+Text Label 2200 2200 0    50   ~ 0
+SCK
+Text Label 2200 2300 0    50   ~ 0
+MISO
+Text GLabel 2100 2100 0    50   Input ~ 0
+AS5048_1_CS
+Wire Wire Line
+	2100 2100 3500 2100
+Wire Wire Line
+	2100 2200 4000 2200
+Wire Wire Line
+	2100 2300 4000 2300
+Wire Wire Line
+	2100 2400 4000 2400
+Wire Wire Line
+	3500 1900 3500 2100
+Connection ~ 3500 2100
+Wire Wire Line
+	3500 2100 4000 2100
+$Comp
+L IC_sensor:AS5048A U1
+U 1 1 624A6CA1
+P 4650 2500
+F 0 "U1" H 4650 3147 60  0000 C CNN
+F 1 "AS5048A" H 4650 3041 60  0000 C CNN
+F 2 "SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 4550 2900 60  0001 C CNN
+F 3 "" H 4650 2500 60  0000 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 2100
+NoConn ~ 4000 2800
+NoConn ~ 4000 2900
+NoConn ~ 5300 2900
+NoConn ~ 5300 2800
+NoConn ~ 5300 2700
+NoConn ~ 5300 2400
+$Comp
+L devices:C_0603 C?
+U 1 1 624AEEFD
+P 5550 2650
+AR Path="/5ED92F9C/624AEEFD" Ref="C?"  Part="1" 
+AR Path="/624A3AB1/624AEEFD" Ref="C1"  Part="1" 
+F 0 "C1" H 5642 2696 50  0000 L CNN
+F 1 "100nF" H 5642 2605 50  0000 L CNN
+F 2 "capacitors:C_0603" H 5550 2500 50  0001 C CNN
+F 3 "" H 5550 2650 50  0000 C CNN
+	1    5550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 624AEF03
+P 5550 2450
+AR Path="/5ED92F9C/624AEF03" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624AEF03" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 5550 2300 50  0001 C CNN
+F 1 "+3.3V" H 5565 2623 50  0000 C CNN
+F 2 "" H 5550 2450 50  0000 C CNN
+F 3 "" H 5550 2450 50  0000 C CNN
+	1    5550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 624AEF09
+P 5550 2800
+AR Path="/5ED92F9C/624AEF09" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624AEF09" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 5550 2550 50  0001 C CNN
+F 1 "GND" H 5555 2627 50  0000 C CNN
+F 2 "" H 5550 2800 50  0000 C CNN
+F 3 "" H 5550 2800 50  0000 C CNN
+	1    5550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2800 5550 2750
+Connection ~ 5550 2800
+Wire Wire Line
+	5550 2550 5550 2500
+Wire Wire Line
+	5300 2500 5550 2500
+Connection ~ 5550 2500
+Wire Wire Line
+	5550 2500 5550 2450
+Wire Wire Line
+	5300 2300 5400 2300
+Wire Wire Line
+	5400 2300 5400 2800
+Wire Wire Line
+	5400 2800 5550 2800
+$Comp
+L power-supply:GND #PWR?
+U 1 1 624AF563
+P 3850 2800
+AR Path="/5ED92F9C/624AF563" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624AF563" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 3850 2550 50  0001 C CNN
+F 1 "GND" H 3855 2627 50  0000 C CNN
+F 2 "" H 3850 2800 50  0000 C CNN
+F 3 "" H 3850 2800 50  0000 C CNN
+	1    3850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2700 3850 2700
+Wire Wire Line
+	3850 2700 3850 2800
+$Comp
+L devices:R_0603 R?
+U 1 1 624B08DE
+P 3500 4250
+AR Path="/5ED92F9C/624B08DE" Ref="R?"  Part="1" 
+AR Path="/624A3AB1/624B08DE" Ref="R7"  Part="1" 
+F 0 "R7" H 3559 4296 50  0000 L CNN
+F 1 "10k" H 3559 4205 50  0000 L CNN
+F 2 "resistors:R_0603" H 3500 4100 50  0001 C CNN
+F 3 "" H 3500 4250 50  0000 C CNN
+	1    3500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 624B097A
+P 3500 4100
+AR Path="/5ED92F9C/624B097A" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624B097A" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 3500 3950 50  0001 C CNN
+F 1 "+3.3V" H 3515 4273 50  0000 C CNN
+F 2 "" H 3500 4100 50  0000 C CNN
+F 3 "" H 3500 4100 50  0000 C CNN
+	1    3500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4150 3500 4100
+Text Label 2200 4550 0    50   ~ 0
+AS5048_2_CS
+Text Label 2200 4850 0    50   ~ 0
+MOSI
+Text GLabel 2100 4850 0    50   Input ~ 0
+MOSI
+Text GLabel 2100 4650 0    50   Input ~ 0
+SCK
+Text GLabel 2100 4750 0    50   Output ~ 0
+MISO
+Text Label 2200 4650 0    50   ~ 0
+SCK
+Text Label 2200 4750 0    50   ~ 0
+MISO
+Text GLabel 2100 4550 0    50   Input ~ 0
+AS5048_2_CS
+Wire Wire Line
+	2100 4550 3500 4550
+Wire Wire Line
+	2100 4650 4000 4650
+Wire Wire Line
+	2100 4750 4000 4750
+Wire Wire Line
+	2100 4850 4000 4850
+Wire Wire Line
+	3500 4350 3500 4550
+Connection ~ 3500 4550
+Wire Wire Line
+	3500 4550 4000 4550
+$Comp
+L IC_sensor:AS5048A U2
+U 1 1 624B0994
+P 4650 4950
+F 0 "U2" H 4650 5597 60  0000 C CNN
+F 1 "AS5048A" H 4650 5491 60  0000 C CNN
+F 2 "SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 4550 5350 60  0001 C CNN
+F 3 "" H 4650 4950 60  0000 C CNN
+	1    4650 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 4550
+NoConn ~ 4000 5250
+NoConn ~ 4000 5350
+NoConn ~ 5300 5350
+NoConn ~ 5300 5250
+NoConn ~ 5300 5150
+NoConn ~ 5300 4850
+$Comp
+L devices:C_0603 C?
+U 1 1 624B09A5
+P 5550 5100
+AR Path="/5ED92F9C/624B09A5" Ref="C?"  Part="1" 
+AR Path="/624A3AB1/624B09A5" Ref="C2"  Part="1" 
+F 0 "C2" H 5642 5146 50  0000 L CNN
+F 1 "100nF" H 5642 5055 50  0000 L CNN
+F 2 "capacitors:C_0603" H 5550 4950 50  0001 C CNN
+F 3 "" H 5550 5100 50  0000 C CNN
+	1    5550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 624B09AF
+P 5550 4900
+AR Path="/5ED92F9C/624B09AF" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624B09AF" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5550 4750 50  0001 C CNN
+F 1 "+3.3V" H 5565 5073 50  0000 C CNN
+F 2 "" H 5550 4900 50  0000 C CNN
+F 3 "" H 5550 4900 50  0000 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 624B09B9
+P 5550 5250
+AR Path="/5ED92F9C/624B09B9" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624B09B9" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5550 5000 50  0001 C CNN
+F 1 "GND" H 5555 5077 50  0000 C CNN
+F 2 "" H 5550 5250 50  0000 C CNN
+F 3 "" H 5550 5250 50  0000 C CNN
+	1    5550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5250 5550 5200
+Connection ~ 5550 5250
+Wire Wire Line
+	5550 5000 5550 4950
+Wire Wire Line
+	5300 4950 5550 4950
+Connection ~ 5550 4950
+Wire Wire Line
+	5550 4950 5550 4900
+Wire Wire Line
+	5300 4750 5400 4750
+Wire Wire Line
+	5400 4750 5400 5250
+Wire Wire Line
+	5400 5250 5550 5250
+$Comp
+L power-supply:GND #PWR?
+U 1 1 624B09CC
+P 3850 5250
+AR Path="/5ED92F9C/624B09CC" Ref="#PWR?"  Part="1" 
+AR Path="/624A3AB1/624B09CC" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 3850 5000 50  0001 C CNN
+F 1 "GND" H 3855 5077 50  0000 C CNN
+F 2 "" H 3850 5250 50  0000 C CNN
+F 3 "" H 3850 5250 50  0000 C CNN
+	1    3850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5150 3850 5150
+Wire Wire Line
+	3850 5150 3850 5250
+$EndSCHEMATC

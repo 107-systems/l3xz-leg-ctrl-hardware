@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "l3xz-hw_leg-controller"
 Date "2022-04-03"
 Rev "0.1"
@@ -215,4 +215,134 @@ Wire Wire Line
 	3600 3750 3500 3750
 Wire Wire Line
 	3500 3750 3500 3950
+$Sheet
+S 9500 3500 1000 500 
+U 624A3AB1
+F0 "Rotary Encoder" 50
+F1 "rotaryencoder.sch" 50
+$EndSheet
+Wire Wire Line
+	5700 3250 4900 3250
+Text Label 5600 3250 2    50   ~ 0
+AS5048_1_CS
+Text GLabel 5700 3250 2    50   Output ~ 0
+AS5048_1_CS
+Wire Wire Line
+	5700 3150 4900 3150
+Text Label 5600 3150 2    50   ~ 0
+AS5048_2_CS
+Text GLabel 5700 3150 2    50   Output ~ 0
+AS5048_2_CS
+$Comp
+L devices:Led_Small D1
+U 1 1 624BD2BD
+P 5600 4400
+F 0 "D1" V 5646 4332 50  0000 R CNN
+F 1 "Led_Small" V 5555 4332 50  0000 R CNN
+F 2 "LEDs:LED_0603" V 5600 4400 50  0001 C CNN
+F 3 "" V 5600 4400 50  0000 C CNN
+	1    5600 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 624BFD41
+P 5600 4050
+AR Path="/5ED92F9C/624BFD41" Ref="R?"  Part="1" 
+AR Path="/624BFD41" Ref="R5"  Part="1" 
+F 0 "R5" H 5659 4096 50  0000 L CNN
+F 1 "10k" H 5659 4005 50  0000 L CNN
+F 2 "resistors:R_0603" H 5600 3900 50  0001 C CNN
+F 3 "" H 5600 4050 50  0000 C CNN
+	1    5600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 624BFD47
+P 7650 2850
+AR Path="/5ED92F9C/624BFD47" Ref="#PWR?"  Part="1" 
+AR Path="/624BFD47" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 7650 2700 50  0001 C CNN
+F 1 "+3.3V" H 7665 3023 50  0000 C CNN
+F 2 "" H 7650 2850 50  0000 C CNN
+F 3 "" H 7650 2850 50  0000 C CNN
+	1    7650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR05
+U 1 1 624C1143
+P 5600 4550
+F 0 "#PWR05" H 5600 4300 50  0001 C CNN
+F 1 "GND" H 5605 4377 50  0000 C CNN
+F 2 "" H 5600 4550 50  0000 C CNN
+F 3 "" H 5600 4550 50  0000 C CNN
+	1    5600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 3950
+Wire Wire Line
+	5600 4150 5600 4300
+Wire Wire Line
+	5600 4500 5600 4550
+$Comp
+L mechanical-connectors:CONN_01X02 P1
+U 1 1 624C3078
+P 8050 3200
+F 0 "P1" H 8128 3241 50  0000 L CNN
+F 1 "CONN_01X02" H 8128 3150 50  0000 L CNN
+F 2 "CON_wuerth:WR-TBL_691382000002" H 8128 3104 50  0001 L CNN
+F 3 "" H 8050 3200 50  0000 C CNN
+	1    8050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 624C3C6E
+P 7650 3000
+AR Path="/5ED92F9C/624C3C6E" Ref="R?"  Part="1" 
+AR Path="/624C3C6E" Ref="R4"  Part="1" 
+F 0 "R4" H 7709 3046 50  0000 L CNN
+F 1 "10k" H 7709 2955 50  0000 L CNN
+F 2 "resistors:R_0603" H 7650 2850 50  0001 C CNN
+F 3 "" H 7650 3000 50  0000 C CNN
+	1    7650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR04
+U 1 1 624C581E
+P 7800 3300
+F 0 "#PWR04" H 7800 3050 50  0001 C CNN
+F 1 "GND" H 7805 3127 50  0000 C CNN
+F 2 "" H 7800 3300 50  0000 C CNN
+F 3 "" H 7800 3300 50  0000 C CNN
+	1    7800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3150 7650 3150
+Wire Wire Line
+	6400 3150 6400 3050
+Wire Wire Line
+	6400 3050 4900 3050
+Wire Wire Line
+	7650 2900 7650 2850
+Wire Wire Line
+	7650 3100 7650 3150
+Connection ~ 7650 3150
+Wire Wire Line
+	7650 3150 6400 3150
+Wire Wire Line
+	7800 3250 7800 3300
+Wire Wire Line
+	7850 3250 7800 3250
+Text Label 5100 3450 0    50   ~ 0
+LED
+Text Label 5100 3050 0    50   ~ 0
+BUMPER
 $EndSCHEMATC
