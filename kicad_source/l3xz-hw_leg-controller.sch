@@ -345,4 +345,57 @@ Text Label 5100 3450 0    50   ~ 0
 LED
 Text Label 5100 3050 0    50   ~ 0
 BUMPER
+$Comp
+L mechanical-connectors:CONN_01X04 P?
+U 1 1 6250C797
+P 2000 6350
+F 0 "P?" H 2078 6391 50  0000 L CNN
+F 1 "CONN_01X04" H 2078 6300 50  0000 L CNN
+F 2 "" H 2000 6350 50  0000 C CNN
+F 3 "" H 2000 6350 50  0000 C CNN
+	1    2000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 6250D556
+P 1700 6600
+F 0 "#PWR?" H 1700 6350 50  0001 C CNN
+F 1 "GND" H 1705 6427 50  0000 C CNN
+F 2 "" H 1700 6600 50  0000 C CNN
+F 3 "" H 1700 6600 50  0000 C CNN
+	1    1700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 6250E35F
+P 1600 6100
+AR Path="/5ED92F9C/6250E35F" Ref="#PWR?"  Part="1" 
+AR Path="/6250E35F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 5950 50  0001 C CNN
+F 1 "+3.3V" H 1615 6273 50  0000 C CNN
+F 2 "" H 1600 6100 50  0000 C CNN
+F 3 "" H 1600 6100 50  0000 C CNN
+	1    1600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6300 1600 6300
+Wire Wire Line
+	1600 6300 1600 6100
+Wire Wire Line
+	1800 6200 1700 6200
+Wire Wire Line
+	1700 6200 1700 6600
+Wire Wire Line
+	1100 6400 1800 6400
+Wire Wire Line
+	1100 6500 1800 6500
+Text Label 1500 6400 2    50   ~ 0
+I2C_SDA
+Text Label 1500 6500 2    50   ~ 0
+I2C_SCL
+Text Notes 1000 5800 0    50   ~ 0
+qwiic connector
 $EndSCHEMATC
