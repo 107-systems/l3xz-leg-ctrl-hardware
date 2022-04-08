@@ -343,17 +343,6 @@ LED
 Text Label 4850 1950 0    50   ~ 0
 BUMPER
 $Comp
-L mechanical-connectors:CONN_01X04 CN2
-U 1 1 6250C797
-P 2000 6350
-F 0 "CN2" H 2078 6391 50  0000 L CNN
-F 1 "CONN_01X04" H 2078 6300 50  0000 L CNN
-F 2 "" H 2000 6350 50  0000 C CNN
-F 3 "" H 2000 6350 50  0000 C CNN
-	1    2000 6350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power-supply:GND #PWR031
 U 1 1 6250D556
 P 1700 6600
@@ -396,12 +385,12 @@ I2C_SCL
 Text Notes 1000 5800 0    50   ~ 0
 qwiic connector
 $Comp
-L mechanical-connectors:CONN_02X03 CN3
+L mechanical-connectors:CONN_02X03 CN6
 U 1 1 624F7225
 P 4050 6400
-F 0 "CN3" H 4050 6715 50  0000 C CNN
+F 0 "CN6" H 4050 6715 50  0000 C CNN
 F 1 "CONN_02X03" H 4050 6624 50  0000 C CNN
-F 2 "" H 4050 5200 50  0000 C CNN
+F 2 "pin_headers:Pin_Header_Angled_2x03" H 4050 5200 50  0001 C CNN
 F 3 "" H 4050 5200 50  0000 C CNN
 	1    4050 6400
 	1    0    0    -1  
@@ -653,4 +642,68 @@ Text Label 1600 4600 2    50   ~ 0
 I2C_SCL
 Text Notes 1250 4250 0    50   ~ 0
 I2C Eeprom to store settings
+$Comp
+L mechanical-connectors:CONN_01X04 CN3
+U 1 1 6250779D
+P 4800 5000
+F 0 "CN3" H 4878 5041 50  0000 L CNN
+F 1 "SM04B-SRSS-TB" H 4878 4950 50  0000 L CNN
+F 2 "connectors_JST_SH:Connectors_JST_SM04B-SRSS-TB" H 4800 5000 50  0001 C CNN
+F 3 "" H 4800 5000 50  0000 C CNN
+	1    4800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR040
+U 1 1 625078B1
+P 4500 5250
+F 0 "#PWR040" H 4500 5000 50  0001 C CNN
+F 1 "GND" H 4505 5077 50  0000 C CNN
+F 2 "" H 4500 5250 50  0000 C CNN
+F 3 "" H 4500 5250 50  0000 C CNN
+	1    4500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 625078BB
+P 4400 4750
+AR Path="/5ED92F9C/625078BB" Ref="#PWR?"  Part="1" 
+AR Path="/625078BB" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 4400 4600 50  0001 C CNN
+F 1 "+3.3V" H 4415 4923 50  0000 C CNN
+F 2 "" H 4400 4750 50  0000 C CNN
+F 3 "" H 4400 4750 50  0000 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4950 4400 4950
+Wire Wire Line
+	4400 4950 4400 4750
+Wire Wire Line
+	4600 4850 4500 4850
+Wire Wire Line
+	4500 4850 4500 5250
+Wire Wire Line
+	3900 5050 4600 5050
+Wire Wire Line
+	3900 5150 4600 5150
+Text Notes 3800 4450 0    50   ~ 0
+serial connector
+Text Label 4050 5050 0    50   ~ 0
+SER_TX
+Text Label 4050 5150 0    50   ~ 0
+SER_RX
+$Comp
+L mechanical-connectors:CONN_01X04 CN2
+U 1 1 6250DED9
+P 2000 6350
+F 0 "CN2" H 2078 6391 50  0000 L CNN
+F 1 "SM04B-SRSS-TB" H 2078 6300 50  0000 L CNN
+F 2 "connectors_JST_SH:Connectors_JST_SM04B-SRSS-TB" H 2000 6350 50  0001 C CNN
+F 3 "" H 2000 6350 50  0000 C CNN
+	1    2000 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

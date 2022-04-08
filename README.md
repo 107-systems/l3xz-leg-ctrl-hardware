@@ -74,6 +74,16 @@ JST GH 1.25mm 4-pin.
 | 3       | CANL          |                                  |
 | 4       | GND           |                                  |
 
+### servo connector CN6
+
+pinheader 2.54mm 2x3-pin.
+
+| **Pin** | **Signal**    | **Description**                  |
+|:-------:|:-------------:|:--------------------------------:|
+| 1+2     | servo-pwm     | 50 Hz pulse signal               |
+| 3+4     | +5V           |                                  |
+| 5+6     | GND           |                                  |
+
 
 ## PCB
 

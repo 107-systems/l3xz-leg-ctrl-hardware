@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "l3xz-hw_leg-controller"
+Date "2022-04-08"
+Rev "0.1"
+Comp "107-systems"
 Comment1 ""
 Comment2 ""
 Comment3 ""
