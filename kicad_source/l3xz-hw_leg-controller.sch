@@ -473,13 +473,9 @@ Wire Wire Line
 	3700 6500 3700 6600
 Wire Wire Line
 	3450 6400 3800 6400
-Wire Wire Line
-	3450 6300 3800 6300
-Wire Wire Line
-	4600 6300 4300 6300
-Text Label 3750 6300 2    50   ~ 0
+Text Label 3100 6150 2    50   ~ 0
 SERVO1
-Text Label 4600 6300 2    50   ~ 0
+Text Label 4950 6150 0    50   ~ 0
 SERVO2
 Wire Wire Line
 	6000 1650 4650 1650
@@ -632,10 +628,6 @@ Wire Wire Line
 Connection ~ 2650 5200
 Wire Wire Line
 	2650 5200 2850 5200
-Wire Wire Line
-	1200 4600 1900 4600
-Wire Wire Line
-	1200 4700 1900 4700
 Text Label 1600 4700 2    50   ~ 0
 I2C_SDA
 Text Label 1600 4600 2    50   ~ 0
@@ -706,4 +698,120 @@ F 3 "" H 2000 6350 50  0000 C CNN
 	1    2000 6350
 	1    0    0    -1  
 $EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 62508159
+P 800 4450
+AR Path="/5ED92F9C/62508159" Ref="R?"  Part="1" 
+AR Path="/62508159" Ref="R9"  Part="1" 
+F 0 "R9" H 859 4496 50  0000 L CNN
+F 1 "10k" H 859 4405 50  0000 L CNN
+F 2 "resistors:R_0603" H 800 4300 50  0001 C CNN
+F 3 "" H 800 4450 50  0000 C CNN
+	1    800  4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 62509863
+P 1100 4450
+AR Path="/5ED92F9C/62509863" Ref="R?"  Part="1" 
+AR Path="/62509863" Ref="R10"  Part="1" 
+F 0 "R10" H 1159 4496 50  0000 L CNN
+F 1 "10k" H 1159 4405 50  0000 L CNN
+F 2 "resistors:R_0603" H 1100 4300 50  0001 C CNN
+F 3 "" H 1100 4450 50  0000 C CNN
+	1    1100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 62509BD1
+P 800 4300
+AR Path="/5ED92F9C/62509BD1" Ref="#PWR?"  Part="1" 
+AR Path="/62509BD1" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 800 4150 50  0001 C CNN
+F 1 "+3.3V" H 815 4473 50  0000 C CNN
+F 2 "" H 800 4300 50  0000 C CNN
+F 3 "" H 800 4300 50  0000 C CNN
+	1    800  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 62509F54
+P 1100 4300
+AR Path="/5ED92F9C/62509F54" Ref="#PWR?"  Part="1" 
+AR Path="/62509F54" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 1100 4150 50  0001 C CNN
+F 1 "+3.3V" H 1115 4473 50  0000 C CNN
+F 2 "" H 1100 4300 50  0000 C CNN
+F 3 "" H 1100 4300 50  0000 C CNN
+	1    1100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  4600 800  4600
+Wire Wire Line
+	650  4700 1100 4700
+Wire Wire Line
+	800  4300 800  4350
+Wire Wire Line
+	1100 4300 1100 4350
+Wire Wire Line
+	800  4550 800  4600
+Connection ~ 800  4600
+Wire Wire Line
+	800  4600 1900 4600
+Wire Wire Line
+	1100 4550 1100 4700
+Connection ~ 1100 4700
+Wire Wire Line
+	1100 4700 1900 4700
+$Comp
+L devices:R_0603 R?
+U 1 1 62518752
+P 4800 6150
+AR Path="/5ED92F9C/62518752" Ref="R?"  Part="1" 
+AR Path="/62518752" Ref="R12"  Part="1" 
+F 0 "R12" H 4859 6196 50  0000 L CNN
+F 1 "100R" H 4859 6105 50  0000 L CNN
+F 2 "resistors:R_0603" H 4800 6000 50  0001 C CNN
+F 3 "" H 4800 6150 50  0000 C CNN
+	1    4800 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 625199DA
+P 3250 6150
+AR Path="/5ED92F9C/625199DA" Ref="R?"  Part="1" 
+AR Path="/625199DA" Ref="R11"  Part="1" 
+F 0 "R11" H 3309 6196 50  0000 L CNN
+F 1 "100R" H 3309 6105 50  0000 L CNN
+F 2 "resistors:R_0603" H 3250 6000 50  0001 C CNN
+F 3 "" H 3250 6150 50  0000 C CNN
+	1    3250 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 6150 4900 6150
+Wire Wire Line
+	2750 6150 3150 6150
+Wire Wire Line
+	3350 6150 3750 6150
+Wire Wire Line
+	3750 6150 3750 6300
+Wire Wire Line
+	3750 6300 3800 6300
+Wire Wire Line
+	4350 6150 4350 6300
+Wire Wire Line
+	4350 6300 4300 6300
+Wire Wire Line
+	4350 6150 4700 6150
+Text Label 4350 6150 0    50   ~ 0
+SERVO2_R
+Text Label 3750 6150 2    50   ~ 0
+SERVO1_R
 $EndSCHEMATC
