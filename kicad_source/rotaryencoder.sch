@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "l3xz-hw_leg-controller"
-Date "2022-04-08"
+Date "2022-04-10"
 Rev "0.1"
 Comp "107-systems"
 Comment1 ""

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/bernhard/projects/l3xz-hw_leg-controller/kicad_source/l3xz-hw_leg-controller.sch)
-    (date "So 10 Apr 2022 09:25:25 CEST")
+    (date "So 10 Apr 2022 09:57:53 CEST")
     (tool "Eeschema 5.1.12-84ad8e8a86~92~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -241,6 +241,18 @@
       (libsource (lib devices) (part CP_Small) (description "Polarised capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 625ADF8C))
+    (comp (ref L1)
+      (value Label)
+      (footprint labels:107systems_logo_small)
+      (libsource (lib devices) (part Label) (description Label))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 625BB6FE))
+    (comp (ref L2)
+      (value Label)
+      (footprint labels:107-systems_logo_big)
+      (libsource (lib devices) (part Label) (description Label))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 625CACB9))
     (comp (ref U8)
       (value MCP2515)
       (footprint SOIC:SOIC-18_7.5x11.6mm_Pitch1.27mm)
@@ -532,6 +544,11 @@
       (pins
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name A) (type passive))))
+    (libpart (lib devices) (part Label)
+      (description Label)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) Label)))
     (libpart (lib devices) (part Led_Small)
       (description Led)
       (footprints
