@@ -14,22 +14,22 @@ leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
 | 2       | +3V3         | 3V3-rail      | supply voltage for board         |
 | 3       | AREF         |               |                                  |
 | 4       | DAC0/A0      |               |                                  |
-| 5       | A1           |               |                                  |
+| 5       | A1           | +BATT_MEAS    | measurement of input voltage     |
 | 6       | A2           |               |                                  |
 | 7       | A3           |               |                                  |
 | 8       | A4/SDA       | I2C_SDA       | I2C for eeprom and qwiic         |
 | 9       | A5/SCL       | I2C_SCL       | I2C for eeprom and qwiic         |
-| 10      | A6           |               |                                  |
-| 11      | A7           |               |                                  |
+| 10      | A6           | LED3          | status LED 3                     |
+| 11      | A7           | LED2          | status LED 2                     |
 | 12      | VUSB/+5V0    |               |                                  |
 | 13      | REC/RESET    | RESET         | Reset                            |
-| 14      | GND          | GND           | chip select for BNO085           |
+| 14      | GND          | GND           | GND                              |
 | 15      | VIN          | power input   | power input for board            |
 | 16      | D1/TX        | SERIAL_TX     | to connector CN3                 |
 | 17      | D0/RX        | SERIAL_RX     | to connector CN3                 |
 | 18      | RESET        | RESET         | Reset                            |
-| 19      | GND          | GND           | to sensors if SPI option is used |
-| 20      | D2           | LED           | to sensors if I2C option is used |
+| 19      | GND          | GND           | GND                              |
+| 20      | D2           | LED1          | status LED 1                     |
 | 21      | D3           | MCP2515_CS    | chip select for CAN              |
 | 22      | D4           | AS5048_1_CS   | chip select for AS5048 1         |
 | 23      | D5           | AS5048_2_CS   | chip select for AS5048 2         |
