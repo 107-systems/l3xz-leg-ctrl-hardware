@@ -74,15 +74,38 @@ JST GH 1.25mm 4-pin.
 | 3       | CANL          |                                  |
 | 4       | GND           |                                  |
 
-### servo connector CN6
+### power input CN6
+
+Würth WR-TBL 3.81mm 2-pin.
+
+| **Pin** | **Signal**    | **Description**                  |
+|:-------:|:-------------:|:--------------------------------:|
+| 1       | V-IN          | directly to Arduino Nano VIN     |
+| 2       | GND           |                                  |
+
+Attention: V_IN is 5 to 21 V and is directly connected to VIN of the Arduino with a diode for reverse polarity protection.
+It is also directly connected to +5V of the servo connector. So it should be limited to +6V if servos are used.
+
+### servo connector CN7
 
 pinheader 2.54mm 2x3-pin.
 
 | **Pin** | **Signal**    | **Description**                  |
 |:-------:|:-------------:|:--------------------------------:|
 | 1+2     | servo-pwm     | 50 Hz pulse signal               |
-| 3+4     | +5V           |                                  |
+| 3+4     | +5V           | directly connected to VIN        |
 | 5+6     | GND           |                                  |
+
+### bumper connector CN8
+
+Würth WR-TBL 2.5mm 2-pin.
+
+| **Pin** | **Signal**    | **Description**                  |
+|:-------:|:-------------:|:--------------------------------:|
+| 1       | BUMPER        | 10k pull up to +3.3V             |
+| 2       | GND           |                                  |
+
+
 
 
 ## PCB

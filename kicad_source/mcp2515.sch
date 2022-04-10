@@ -415,19 +415,6 @@ F 3 "" V 8000 6150 50  0000 C CNN
 	1    8000 6150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power-supply:+5V #PWR?
-U 1 1 62500CD5
-P 7750 6100
-AR Path="/624F7A5F/62500CD5" Ref="#PWR?"  Part="1" 
-AR Path="/5ED92F9C/62500CD5" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 7750 5950 50  0001 C CNN
-F 1 "+5V" H 7765 6273 50  0000 C CNN
-F 2 "" H 7750 6100 50  0000 C CNN
-F 3 "" H 7750 6100 50  0000 C CNN
-	1    7750 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 6150 8100 6150
 Wire Wire Line
@@ -498,4 +485,15 @@ Wire Wire Line
 	6350 3050 6350 3100
 Wire Wire Line
 	5850 3050 5850 3100
+$Comp
+L power-supply:+BATT #PWR038
+U 1 1 6252FED9
+P 7750 6100
+F 0 "#PWR038" H 7750 5950 50  0001 C CNN
+F 1 "+BATT" H 7765 6273 50  0000 C CNN
+F 2 "" H 7750 6100 50  0000 C CNN
+F 3 "" H 7750 6100 50  0000 C CNN
+	1    7750 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
