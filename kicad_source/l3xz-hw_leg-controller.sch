@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "l3xz-hw_leg-controller"
-Date "2022-04-10"
+Date "2022-04-12"
 Rev "0.1"
 Comp "107-systems"
 Comment1 ""
@@ -1146,6 +1146,17 @@ F 1 "Label" H 9678 5600 60  0000 L CNN
 F 2 "labels:107-systems_logo_big" H 9678 5494 60  0000 L CNN
 F 3 "" H 9450 5600 60  0000 C CNN
 	1    9450 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L devices:Label L3
+U 1 1 625E2D3C
+P 9450 5950
+F 0 "L3" H 9678 6056 60  0000 L CNN
+F 1 "Label" H 9678 5950 60  0000 L CNN
+F 2 "labels:opencyphal_small" H 9678 5844 60  0000 L CNN
+F 3 "" H 9450 5950 60  0000 C CNN
+	1    9450 5950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
