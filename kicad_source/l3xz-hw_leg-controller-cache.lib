@@ -21,6 +21,52 @@ X NC1 8 1050 550 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# IC_interface_i2c_24LC64
+#
+DEF IC_interface_i2c_24LC64 U 0 40 Y Y 1 F N
+F0 "U" 0 400 43 H V C CNN
+F1 "IC_interface_i2c_24LC64" 0 -400 43 H V C CNN
+F2 "SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" 0 0 43 H I C CNN
+F3 "" 0 0 43 H I C CNN
+DRAW
+S -250 350 250 -350 0 1 0 N
+X A0 1 -350 -100 100 R 50 50 1 1 I
+X A1 2 -350 -200 100 R 50 50 1 1 I
+X A2 3 -350 -300 100 R 50 50 1 1 I
+X VSS 4 350 -300 100 L 50 50 1 1 I
+X SDA 5 -350 200 100 R 50 50 1 1 I
+X SCL 6 -350 300 100 R 50 50 1 1 I
+X WP 7 350 -100 100 L 50 50 1 1 I
+X VCC 8 350 300 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# IC_sensor_AS5048A
+#
+DEF IC_sensor_AS5048A U 0 40 Y Y 1 F N
+F0 "U" 0 500 60 H V C CNN
+F1 "IC_sensor_AS5048A" 0 -500 60 H V C CNN
+F2 "SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" -100 400 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -450 450 450 -450 0 1 0 N
+X CS# 1 -650 400 200 R 50 50 1 1 I
+X TEST10 10 650 -200 200 L 50 50 1 1 I
+X VDD5V 11 650 0 200 L 50 50 1 1 I
+X VDD3V 12 650 100 200 L 50 50 1 1 I
+X GND 13 650 200 200 L 50 50 1 1 I
+X PWM 14 650 400 200 L 50 50 1 1 I
+X CLK 2 -650 300 200 R 50 50 1 1 I
+X MISO 3 -650 200 200 R 50 50 1 1 I
+X MOSI 4 -650 100 200 R 50 50 1 1 I
+X TEST5 5 -650 -200 200 R 50 50 1 1 I
+X TEST6 6 -650 -300 200 R 50 50 1 1 I
+X TEST7 7 -650 -400 200 R 50 50 1 1 I
+X TEST8 8 650 -400 200 L 50 50 1 1 I
+X TEST9 9 650 -300 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # IC_transceiver_can_MCP2515
 #
 DEF IC_transceiver_can_MCP2515 U 0 40 Y Y 1 F N
@@ -106,6 +152,31 @@ X A5/SCL 9 -650 -150 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# devices_CP_Small
+#
+DEF devices_CP_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "devices_CP_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ CP*
+ Elko*
+ TantalC*
+ C*elec
+ c_elec*
+ SMD*_Pol
+$ENDFPLIST
+DRAW
+S -60 -12 60 -27 0 1 0 F
+S -60 27 60 12 0 1 0 N
+P 2 0 1 0 -50 60 -30 60 N
+P 2 0 1 0 -40 50 -40 70 N
+X ~ 1 0 100 73 D 40 40 1 1 P
+X ~ 2 0 -100 73 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # devices_C_0603
 #
 DEF devices_C_0603 C 0 10 N N 1 F N
@@ -149,6 +220,63 @@ X case 4 0 -100 28 U 25 20 1 1 P
 ENDDRAW
 ENDDEF
 #
+# devices_D_Schottky_Small
+#
+DEF devices_D_Schottky_Small D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "devices_D_Schottky_Small" -280 -80 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ Diode_*
+ D-Pak_TO252AA
+ *SingleDiode
+ *SingleDiode*
+ *_Diode_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 3 0 1 0 -30 -40 -20 -40 -20 -30 N
+P 3 0 1 0 -30 40 -40 40 -40 30 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# devices_Label
+#
+DEF devices_Label L 0 40 Y Y 1 F N
+F0 "L" 0 200 60 H V C CNN
+F1 "devices_Label" 0 0 60 H V C CNN
+F2 "" -100 100 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -200 150 200 -150 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# devices_Led_Small
+#
+DEF devices_Led_Small D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "devices_Led_Small" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 40 40 1 1 P
+X A 2 100 0 70 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # devices_R_0603
 #
 DEF devices_R_0603 R 0 10 N N 1 F N
@@ -167,6 +295,84 @@ X ~ 2 0 -100 30 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
+# mechanical-connectors_CONN_01X02
+#
+DEF mechanical-connectors_CONN_01X02 P 0 40 Y N 1 F N
+F0 "P" 0 150 50 H V C CNN
+F1 "mechanical-connectors_CONN_01X02" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X02
+ Pin_Header_Angled_1X02
+ Socket_Strip_Straight_1X02
+ Socket_Strip_Angled_1X02
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mechanical-connectors_CONN_01X04
+#
+DEF mechanical-connectors_CONN_01X04 P 0 40 Y N 1 F N
+F0 "P" 0 250 50 H V C CNN
+F1 "mechanical-connectors_CONN_01X04" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X04
+ Pin_Header_Angled_1X04
+ Socket_Strip_Straight_1X04
+ Socket_Strip_Angled_1X04
+$ENDFPLIST
+DRAW
+S -50 -145 10 -155 0 1 0 N
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 155 10 145 0 1 0 N
+S -50 200 50 -200 0 1 0 N
+X P1 1 -200 150 150 R 50 50 1 1 P
+X P2 2 -200 50 150 R 50 50 1 1 P
+X P3 3 -200 -50 150 R 50 50 1 1 P
+X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mechanical-connectors_CONN_02X03
+#
+DEF mechanical-connectors_CONN_02X03 P 0 1 Y N 1 F N
+F0 "P" 0 200 50 H V C CNN
+F1 "mechanical-connectors_CONN_02X03" 0 -200 50 H V C CNN
+F2 "" 0 -1200 50 H V C CNN
+F3 "" 0 -1200 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_2X03
+ Pin_Header_Angled_2X03
+ Socket_Strip_Straight_2X03
+ Socket_Strip_Angled_2X03
+$ENDFPLIST
+DRAW
+S -100 -95 -50 -105 0 1 0 N
+S -100 5 -50 -5 0 1 0 N
+S -100 105 -50 95 0 1 0 N
+S -100 150 100 -150 0 1 0 N
+S 50 -95 100 -105 0 1 0 N
+S 50 5 100 -5 0 1 0 N
+S 50 105 100 95 0 1 0 N
+X P1 1 -250 100 150 R 50 50 1 1 P
+X P2 2 250 100 150 L 50 50 1 1 P
+X P3 3 -250 0 150 R 50 50 1 1 P
+X P4 4 250 0 150 L 50 50 1 1 P
+X P5 5 -250 -100 150 R 50 50 1 1 P
+X P6 6 250 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # power-supply_+3.3V
 #
 DEF power-supply_+3.3V #PWR 0 0 Y Y 1 F P
@@ -180,6 +386,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power-supply_+BATT
+#
+DEF power-supply_+BATT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power-supply_+BATT" 0 140 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
