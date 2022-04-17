@@ -4,6 +4,10 @@ leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
 
 ![l3xz-hw_leg-controller rendering](docs/images/l3xz-hw_leg-controller_rendering.png)
 
+## SOftware
+
+https://github.com/107-systems/l3xz-fw_leg-controller
+
 ## pin usage
 
 ### Arduino Nano 33 IoT connector CN1
