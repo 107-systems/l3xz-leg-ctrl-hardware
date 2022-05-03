@@ -109,7 +109,17 @@ Würth WR-TBL 2.5mm 2-pin.
 | 1       | BUMPER        | 10k pull up to +3.3V             |
 | 2       | GND           |                                  |
 
+## BOM
 
+| **Designator** | **Part Name**             | **Link**                  |
+|:--------------:|:-------------------------:|:--------------------------------:|
+| CN1            | Arduino Nano              | https://www.reichelt.de/praez-buchsenleisten-2-54-mm-1x15-gerade-mpe-115-1-015-p187279.html |
+| CN2, CN3       | JST SH SM04B-SRSS-TB      |                                  |
+| CN4, CN5       | JST GH SM04B-GHS-TB       | https://www.voelkner.de/products/1102742/JST-Stiftgehaeuse-Platine-GH-Polzahl-Gesamt-4-Rastermass-1.25mm-SM04B-GHS-TB-LF-SN.html           |
+| CN6            | Würth WR-TBL 691322310002 |                                  |
+| CN7            | Pinheader 2.54 mm 2x3     | https://www.reichelt.de/stiftleisten-2-54-mm-2x03-gewinkelt-mpe-088-2-006-p119904.html      |
+| CN8            | Würth WR-TBL 691382010002 | https://www.reichelt.de/print-stiftleiste-micro-rm-2-5-gewinkelt-2-pol--wago-733-362-p45863.html |
+| Y1             | Quartz 16 MHz 5x2.5mm     | https://www.reichelt.de/keramik-smd-quarz-3x5x1mm-16-0mhz-16-000000-mj-p85005.html          |
 
 
 ## PCB
