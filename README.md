@@ -38,9 +38,9 @@ https://github.com/107-systems/l3xz-fw_leg-controller
 | 22      | D4           | AS5048_1_CS   | chip select for AS5048 1         |
 | 23      | D5           | AS5048_2_CS   | chip select for AS5048 2         |
 | 24      | D6           | BUMPER        | input for bumper                 |
-| 25      | D7           | MCP2515_INT   | CAN interrupt                    |
+| 25      | D7           | SERVO1        | PWM output for servo 1           |
 | 26      | D8           |               |                                  |
-| 27      | D9           | SERVO1        | PWM output for servo 1           |
+| 27      | D9           | MCP2515_INT   | CAN interrupt                    |
 | 28      | D10          | SERVO2        | PWM output for servo 2           |
 | 29      | D11/MOSI     | SPI_MOSI      | SPI for CAN and AS5048 encoder   |
 | 30      | D12/MISO     | SPI_MISO      | SPI for CAN and AS5048 encoder   |

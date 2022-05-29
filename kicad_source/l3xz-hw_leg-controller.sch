@@ -110,14 +110,14 @@ SER_RX
 Text Label 5400 2650 0    50   ~ 0
 SER_TX
 Wire Wire Line
-	6300 1850 4650 1850
+	6300 1650 4650 1650
 Wire Wire Line
 	6300 1450 4650 1450
-Text Label 5400 1850 0    50   ~ 0
+Text Label 5400 1650 0    50   ~ 0
 MCP2515_INT
 Text Label 5400 1450 0    50   ~ 0
 MOSI
-Text GLabel 6300 1850 2    50   Input ~ 0
+Text GLabel 6300 1650 2    50   Input ~ 0
 MCP2515_INT
 Text GLabel 6300 1450 2    50   Output ~ 0
 MOSI
@@ -432,12 +432,12 @@ SERVO1
 Text Label 4950 6150 0    50   ~ 0
 SERVO2
 Wire Wire Line
-	6000 1650 4650 1650
+	6000 1850 4650 1850
 Wire Wire Line
 	4650 1550 6000 1550
 Text Label 5150 1550 2    50   ~ 0
 SERVO2
-Text Label 5150 1650 2    50   ~ 0
+Text Label 5150 1850 2    50   ~ 0
 SERVO1
 $Comp
 L devices:R_0603 R?
@@ -1163,4 +1163,6 @@ Text Notes 1800 4300 0    50   ~ 0
 I2C address: 0x50
 Text Notes 6400 5050 0    50   ~ 0
 30V 500mA
+Text Notes 4800 1750 0    50   ~ 0
+Pin D7 and D9 have been manually reworked on all boards!
 $EndSCHEMATC
