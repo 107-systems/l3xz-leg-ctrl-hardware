@@ -289,7 +289,6 @@ RXCAN
 Text Label 5600 2200 0    50   ~ 0
 TXCAN
 NoConn ~ 9350 2450
-NoConn ~ 9350 2050
 $Comp
 L mechanical-connectors:CONN_01X04 CN?
 U 1 1 62500CA8
@@ -379,7 +378,7 @@ P 8000 6150
 AR Path="/624F7A5F/62500CCF" Ref="D?"  Part="1" 
 AR Path="/5ED92F9C/62500CCF" Ref="D2"  Part="1" 
 F 0 "D2" H 8000 6355 50  0000 C CNN
-F 1 "DNI" H 8000 6264 50  0000 C CNN
+F 1 "MBR0530T1G" H 8000 6264 50  0000 C CNN
 F 2 "diodes:SOD-123" V 8000 6150 50  0001 C CNN
 F 3 "" V 8000 6150 50  0000 C CNN
 	1    8000 6150
@@ -623,4 +622,27 @@ Wire Wire Line
 	1650 3500 2500 3500
 Text Notes 2450 3200 0    50   ~ 0
 MCP2515 alternative package DIL
+Text Notes 7900 6350 0    50   ~ 0
+30V 500mA
+$Comp
+L power-supply:GND #PWR?
+U 1 1 6294B65D
+P 9600 1800
+F 0 "#PWR?" H 9600 1550 50  0001 C CNN
+F 1 "GND" H 9605 1627 50  0000 C CNN
+F 2 "" H 9600 1800 50  0000 C CNN
+F 3 "" H 9600 1800 50  0000 C CNN
+	1    9600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2050 9400 2050
+Wire Wire Line
+	9400 2050 9400 1700
+Wire Wire Line
+	9400 1700 9600 1700
+Wire Wire Line
+	9600 1700 9600 1800
+Text Notes 9000 1500 0    50   ~ 0
+Pin 8 has been connected to GND manually\non all boards to allow usage of SN65HVD230D
 $EndSCHEMATC
