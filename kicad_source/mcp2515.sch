@@ -326,7 +326,7 @@ Wire Wire Line
 Text Notes 7850 3950 0    50   ~ 0
 CAN in
 Text Notes 8000 3650 0    50   ~ 0
-UAVCAN Dronecode connectors
+UCANPHY Micro connectors
 $Comp
 L mechanical-connectors:CONN_01X04 CN?
 U 1 1 62500CBC
@@ -382,10 +382,6 @@ F 3 "" V 8000 6150 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	8800 6150 8100 6150
-Wire Wire Line
-	7900 6150 7750 6150
-Wire Wire Line
-	7750 6150 7750 6100
 Text Label 7900 5000 0    50   ~ 0
 CANVCC
 Text Label 7900 4050 0    50   ~ 0
@@ -453,12 +449,12 @@ Wire Wire Line
 $Comp
 L power-supply:+BATT #PWR038
 U 1 1 6252FED9
-P 7750 6100
-F 0 "#PWR038" H 7750 5950 50  0001 C CNN
-F 1 "+BATT" H 7765 6273 50  0000 C CNN
-F 2 "" H 7750 6100 50  0000 C CNN
-F 3 "" H 7750 6100 50  0000 C CNN
-	1    7750 6100
+P 7700 6100
+F 0 "#PWR038" H 7700 5950 50  0001 C CNN
+F 1 "+BATT" H 7715 6273 50  0000 C CNN
+F 2 "" H 7700 6100 50  0000 C CNN
+F 3 "" H 7700 6100 50  0000 C CNN
+	1    7700 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -664,4 +660,10 @@ Wire Wire Line
 Connection ~ 6450 2850
 Wire Wire Line
 	6450 2850 6450 3200
+Text Notes 8950 1450 0    50   ~ 0
+connect pin to GND\nto allow usage of SN65HVD230
+Wire Wire Line
+	7700 6150 7700 6100
+Wire Wire Line
+	7700 6150 7900 6150
 $EndSCHEMATC
