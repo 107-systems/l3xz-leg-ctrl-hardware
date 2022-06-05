@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "l3xz-hw_leg-controller"
-Date "2022-05-29"
-Rev "0.1"
+Date "2022-06-05"
+Rev "dev_0.2"
 Comp "107-systems"
 Comment1 ""
 Comment2 ""
@@ -1163,6 +1163,4 @@ Text Notes 1800 4300 0    50   ~ 0
 I2C address: 0x50
 Text Notes 6400 5050 0    50   ~ 0
 30V 500mA
-Text Notes 4800 1750 0    50   ~ 0
-Pin D7 and D9 have been manually reworked on all boards!
 $EndSCHEMATC

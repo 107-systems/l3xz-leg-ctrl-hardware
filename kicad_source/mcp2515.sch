@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "l3xz-hw_leg-controller"
-Date "2022-04-12"
-Rev "0.1"
+Date "2022-06-05"
+Rev "dev_0.2"
 Comp "107-systems"
 Comment1 ""
 Comment2 ""
@@ -625,10 +625,10 @@ MCP2515 alternative package DIL
 Text Notes 7900 6350 0    50   ~ 0
 30V 500mA
 $Comp
-L power-supply:GND #PWR?
+L power-supply:GND #PWR0102
 U 1 1 6294B65D
 P 9600 1800
-F 0 "#PWR?" H 9600 1550 50  0001 C CNN
+F 0 "#PWR0102" H 9600 1550 50  0001 C CNN
 F 1 "GND" H 9605 1627 50  0000 C CNN
 F 2 "" H 9600 1800 50  0000 C CNN
 F 3 "" H 9600 1800 50  0000 C CNN
@@ -643,6 +643,4 @@ Wire Wire Line
 	9400 1700 9600 1700
 Wire Wire Line
 	9600 1700 9600 1800
-Text Notes 9000 1500 0    50   ~ 0
-Pin 8 has been connected to GND manually\non all boards to allow usage of SN65HVD230D
 $EndSCHEMATC
