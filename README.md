@@ -1,14 +1,19 @@
-# l3xz-hw_leg-controller
+l3xz-hw_leg-controller
+======================
 
-leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
+Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
+
+<p align="center">
+  <a href="https://github.com/107-systems/l3xz"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/l3xz-logo-memento-mori-github.png" width="30%"></a>
+</p>
 
 ![l3xz-hw_leg-controller rendering](docs/images/l3xz-hw_leg-controller_rendering.png)
 
-## SOftware
+## Software
 
 https://github.com/107-systems/l3xz-fw_leg-controller
 
-## pin usage
+## Pin usage
 
 ### Arduino Nano 33 IoT connector CN1
 
@@ -149,9 +154,7 @@ WAGO 733-362 2.5mm 2-pin.
 
 ![l3xz-hw_leg-controller PCB bot](docs/images/l3xz-hw_leg-controller_bot.png)
 
-
-
-## spec
+## Specification
 
 ```
         |-- 6 x Leg Controller Board (Arduino Nano 33 IoT)
