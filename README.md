@@ -1,5 +1,8 @@
-l3xz-hw_leg-controller
-======================
+<a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
+`l3xz-leg-ctrl-hardware`
+========================
+<a href="https://opencyphal.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/opencyphal.svg" width="25%"></a>
+
 
 Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
 
@@ -7,16 +10,15 @@ Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
   <a href="https://github.com/107-systems/l3xz"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/l3xz-logo-memento-mori-github.png" width="40%"></a>
 </p>
 
-![l3xz-hw_leg-controller rendering](docs/images/l3xz-hw_leg-controller_rendering.png)
+<p align="center">
+  <img src="docs/images/l3xz-leg-ctrl-hardware_rendering.png" width="40%"></a>
+</p>
 
-## Software
+## Firmware
+[l3xz-leg-ctrl-firmware](https://github.com/107-systems/l3xz-leg-ctrl-firmware)
 
-https://github.com/107-systems/l3xz-fw_leg-controller
-
-## Pin usage
-
+## Pin Usage
 ### Arduino Nano 33 IoT connector CN1
-
 | **Pin** | **Pin Name** | **Signal**    | **Description**                  |
 |:-------:|:------------:|:-------------:|:--------------------------------:|
 | 1       | D13/SCK      | SPI_SCK       | SPI for CAN and AS5048 encoder   |
@@ -51,53 +53,48 @@ https://github.com/107-systems/l3xz-fw_leg-controller
 | 30      | D12/MISO     | SPI_MISO      | SPI for CAN and AS5048 encoder   |
 
 ### Qwiic I2C connector CN2
-
-compatible to Sparkfun Qwiic. JST SH 1mm 4-pin.
-
-| **Pin** | **Signal**    | **Description**                  |
-|:-------:|:-------------:|:--------------------------------:|
-| 1       | GND           |                                  |
-| 2       | VCC           |                                  |
-| 3       | I2C_SDA       |                                  |
-| 4       | I2C_SCL       |                                  |
-
-### serial connector CN3
-
 JST SH 1mm 4-pin.
 
-| **Pin** | **Signal**    | **Description**                  |
-|:-------:|:-------------:|:--------------------------------:|
-| 1       | GND           |                                  |
-| 2       | VCC           |                                  |
-| 3       | SERIAL_TX     |                                  |
-| 4       | SERIAL_RX     |                                  |
+| **Pin** | **Signal**    |
+|:-------:|:-------------:|
+| 1       | GND           |
+| 2       | VCC           |
+| 3       | I2C_SDA       |
+| 4       | I2C_SCL       |
+
+### Serial connector CN3
+JST SH 1mm 4-pin.
+
+| **Pin** | **Signal**    |
+|:-------:|:-------------:|
+| 1       | GND           |
+| 2       | VCC           |
+| 3       | SERIAL_TX     |
+| 4       | SERIAL_RX     |
 
 ### Dronecode CAN connector CN4 and CN5
-
 JST GH 1.25mm 4-pin.
 
-| **Pin** | **Signal**    | **Description**                  |
-|:-------:|:-------------:|:--------------------------------:|
-| 1       | CANVCC        |                                  |
-| 2       | CANH          |                                  |
-| 3       | CANL          |                                  |
-| 4       | GND           |                                  |
+| **Pin** | **Signal**    |
+|:-------:|:-------------:|
+| 1       | CANVCC        |
+| 2       | CANH          |
+| 3       | CANL          |
+| 4       | GND           |
 
-### power input CN6
-
+### Power Input CN6
 Würth WR-TBL 3.81mm 2-pin.
 
-| **Pin** | **Signal**    | **Description**                  |
-|:-------:|:-------------:|:--------------------------------:|
-| 1       | V-IN          | directly to Arduino Nano VIN     |
-| 2       | GND           |                                  |
+| **Pin** | **Signal**    |       **Description**        |
+|:-------:|:-------------:|:----------------------------:|
+| 1       | V-IN          | Directly to Arduino Nano VIN |
+| 2       | GND           |                              |
 
 Attention: V_IN is 5 to 21 V and is directly connected to VIN of the Arduino with a diode for reverse polarity protection.
 It is also directly connected to +5V of the servo connector. So it should be limited to +6V if servos are used.
 
-### servo connector CN7
-
-pinheader 2.54mm 2x3-pin.
+### Cervo connector CN7
+2x3 pin-header 2.54 mm.
 
 | **Pin** | **Signal**    | **Description**                  |
 |:-------:|:-------------:|:--------------------------------:|
@@ -105,8 +102,7 @@ pinheader 2.54mm 2x3-pin.
 | 3+4     | +5V           | directly connected to VIN        |
 | 5+6     | GND           |                                  |
 
-### bumper connector CN8
-
+### Bumper Connector CN8
 WAGO 733-362 2.5mm 2-pin.
 
 | **Pin** | **Signal**    | **Description**                  |
@@ -143,23 +139,15 @@ WAGO 733-362 2.5mm 2-pin.
 | U9 alternative | SN65HVD230D               | https://www.reichelt.de/high-speed-can-transceiver-1-mbit-s-3-3-v-so-8-sn-65hvd230d-p58427.html |
 | Y1             | Quartz 16 MHz 5x2.5mm     | https://www.reichelt.de/keramik-smd-quarz-3x5x1mm-16-0mhz-16-000000-mj-p85005.html          |
 
-
 ## PCB
-
 ### Top
 
-![l3xz-hw_leg-controller PCB top](docs/images/l3xz-hw_leg-controller_top.png)
+<p align="center">
+  <img src="docs/images/l3xz-leg-ctrl-hardware_top.png" width="40%"></a>
+</p>
 
 ### Bottom
 
-![l3xz-hw_leg-controller PCB bot](docs/images/l3xz-hw_leg-controller_bot.png)
-
-## Specification
-
-```
-        |-- 6 x Leg Controller Board (Arduino Nano 33 IoT)
-           |-- 2 x AS5048A rotary angle sensor for femur/tibia rotation
-           |-- 1 x Screw terminals for ground contact bumper switch
-           |-- 1-2 LEDs
-           |-- MCP2515 for connectivity via UAVCAN
-```
+<p align="center">
+  <img src="docs/images/l3xz-leg-ctrl-hardware_bot.png" width="40%"></a>
+</p>
