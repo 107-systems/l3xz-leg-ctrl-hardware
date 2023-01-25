@@ -3,8 +3,7 @@
 ========================
 <a href="https://opencyphal.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/opencyphal.svg" width="25%"></a>
 
-
-Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw)
+Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw).
 
 <p align="center">
   <a href="https://github.com/107-systems/l3xz"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/l3xz-logo-memento-mori-github.png" width="40%"></a>
