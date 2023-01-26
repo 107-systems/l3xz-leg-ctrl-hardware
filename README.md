@@ -1,16 +1,11 @@
 <a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
 `l3xz-leg-ctrl-hardware`
 ========================
-<a href="https://opencyphal.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/opencyphal.svg" width="25%"></a>
-Leg controller for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw).
+
+Custom leg controller board for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw).
 
 <p align="center">
-  <a href="https://github.com/107-systems/l3xz"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/l3xz-logo-memento-mori-github.png" width="30%"></a>
-</p>
-
-## 3D Rendering
-<p align="center">
-  <img src="docs/images/l3xz-leg-ctrl-hardware_rendering.png" width="60%"></a>
+  <a href="https://github.com/107-systems/l3xz"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/l3xz-logo-memento-mori-github.png" width="40%"></a>
 </p>
 
 ## Firmware
