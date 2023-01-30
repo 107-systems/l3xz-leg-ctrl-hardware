@@ -6,8 +6,8 @@
 
   (title_block
     (title "l3xz-hw_leg-controller")
-    (date "2023-01-29")
-    (rev "dev_0.2")
+    (date "2023-01-30")
+    (rev "0.2")
     (company "107-systems")
   )
 
@@ -2750,6 +2750,40 @@
     (pin "2" (uuid b38ca434-3a0f-4fea-810c-c679186f78bf))
   )
 
+  (symbol (lib_id "generationmake:Label") (at 240.03 115.57 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 30f2ab3d-3eed-4de9-b2fb-d092f4eb160a)
+    (property "Reference" "L4" (id 0) (at 245.8212 112.8776 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "Label" (id 1) (at 245.8212 115.57 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Footprint" "generationmake:l3xz_silk" (id 2) (at 245.8212 118.2624 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Datasheet" "" (id 3) (at 240.03 115.57 0)
+      (effects (font (size 1.524 1.524)))
+    )
+  )
+
+  (symbol (lib_id "generationmake:Label") (at 240.03 124.46 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 32418b59-9da7-4cd8-97f6-00b5eadf13ed)
+    (property "Reference" "L5" (id 0) (at 245.8212 121.7676 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "Label" (id 1) (at 245.8212 124.46 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Footprint" "generationmake:l3xz_small_silk" (id 2) (at 245.8212 127.1524 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Datasheet" "" (id 3) (at 240.03 124.46 0)
+      (effects (font (size 1.524 1.524)))
+    )
+  )
+
   (sheet (at 241.3 63.5) (size 25.4 12.7) (fields_autoplaced)
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -3029,6 +3063,12 @@
     )
     (path "/00000000-0000-0000-0000-0000625e2d3c"
       (reference "L3") (unit 1) (value "Label") (footprint "labels:opencyphal_small")
+    )
+    (path "/30f2ab3d-3eed-4de9-b2fb-d092f4eb160a"
+      (reference "L4") (unit 1) (value "Label") (footprint "generationmake:l3xz_silk")
+    )
+    (path "/32418b59-9da7-4cd8-97f6-00b5eadf13ed"
+      (reference "L5") (unit 1) (value "Label") (footprint "generationmake:l3xz_small_silk")
     )
     (path "/00000000-0000-0000-0000-00005e401602"
       (reference "MECH1") (unit 1) (value "MHP_3.2_5.8") (footprint "MECH_mounting_holes:MHP_3.2_5.8")
