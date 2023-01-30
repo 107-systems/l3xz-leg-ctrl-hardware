@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "l3xz-hw_leg-controller"
-Date "2022-05-29"
-Rev "0.1"
+Date "2022-06-05"
+Rev "dev_0.2"
 Comp "107-systems"
 Comment1 ""
 Comment2 ""
@@ -126,7 +126,7 @@ SCK
 Text GLabel 6300 1350 2    50   Output ~ 0
 MISO
 Wire Wire Line
-	6300 1350 4650 1350
+	6300 1350 4750 1350
 Wire Wire Line
 	3350 1350 1700 1350
 Text Label 2600 1350 2    50   ~ 0
@@ -1163,6 +1163,37 @@ Text Notes 1800 4300 0    50   ~ 0
 I2C address: 0x50
 Text Notes 6400 5050 0    50   ~ 0
 30V 500mA
-Text Notes 4800 1750 0    50   ~ 0
-Pin D7 and D9 have been manually reworked on all boards!
+$Comp
+L power-supply:+3.3V #PWR?
+U 1 1 629F7BED
+P 4750 1050
+AR Path="/5ED92F9C/629F7BED" Ref="#PWR?"  Part="1" 
+AR Path="/629F7BED" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 4750 900 50  0001 C CNN
+F 1 "+3.3V" H 4765 1223 50  0000 C CNN
+F 2 "" H 4750 1050 50  0000 C CNN
+F 3 "" H 4750 1050 50  0000 C CNN
+	1    4750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 629F7C9D
+P 4750 1200
+AR Path="/5ED92F9C/629F7C9D" Ref="R?"  Part="1" 
+AR Path="/629F7C9D" Ref="R17"  Part="1" 
+F 0 "R17" H 4809 1246 50  0000 L CNN
+F 1 "10k" H 4809 1155 50  0000 L CNN
+F 2 "resistors:R_0603" H 4750 1050 50  0001 C CNN
+F 3 "" H 4750 1200 50  0000 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1100 4750 1050
+Wire Wire Line
+	4750 1300 4750 1350
+Connection ~ 4750 1350
+Wire Wire Line
+	4750 1350 4650 1350
 $EndSCHEMATC
