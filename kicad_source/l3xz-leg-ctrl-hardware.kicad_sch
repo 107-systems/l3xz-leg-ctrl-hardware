@@ -3121,7 +3121,7 @@
       (reference "U9") (unit 1) (value "SN65HVD232") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00005ed92f9c/00000000-0000-0000-0000-00005ed95d76"
-      (reference "Y1") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
+      (reference "Y1") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm")
     )
     (path "/00000000-0000-0000-0000-00005ed92f9c/00000000-0000-0000-0000-0000629e5265"
       (reference "Y2") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_HC49-U_Vertical")
