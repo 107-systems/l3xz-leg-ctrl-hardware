@@ -1,6 +1,7 @@
 <a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
 `l3xz-leg-ctrl-hardware`
 ========================
+[![Spell Check status](https://github.com/107-systems/l3xz-leg-ctrl-hardware/actions/workflows/spell-check.yml/badge.svg)](https://github.com/107-systems/l3xz-leg-ctrl-hardware/actions/workflows/spell-check.yml)
 
 Custom leg controller board for the [L3X-Z Hexapod](https://github.com/107-systems/l3xz-hw).
 
